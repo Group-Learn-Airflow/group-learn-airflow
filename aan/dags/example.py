@@ -16,7 +16,7 @@ with DAG(
     # SAMPLE USING SQL FILE
     create_pet_table = PostgresOperator(
         task_id="create_pet_table",
-        sql="sql/birth_date.sql",
+        sql="pet_schema.sql",
         postgres_conn_id="postgres_default"
     )
 
